@@ -1,0 +1,10 @@
+<dynamic-tab
+  [tabs]="tabs"
+  [visibleTabs]="visibleTabs"
+  [moreTabs]="moreTabs"
+  [selectedTab]="selectedTab" (indexSelected)="indexSelected($event)"
+>
+<div   >
+Content for {{ tabs[index] }}
+</div>
+</dynamic-tab>

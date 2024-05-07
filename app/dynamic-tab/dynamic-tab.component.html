@@ -1,0 +1,29 @@
+<div class="basic-container">
+<ul class="nav nav-tabs">
+  <li
+    *ngFor="let tab of visibleTabs; let i = index; trackBy: trackByFn"
+    (click)="selectTab(i)"
+    class="nav-link"
+    [class.active]="i === selectedTab"
+  >
+    {{ tab }}
+  </li>
+  <!-- Nút More để hiển thị các tab ẩn -->
+  <li class="nav-item dropdown" *ngIf="moreTabs.length > 0">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-ellipsis-h"></i> <!-- Icon More -->
+</a>
+    <div class="dropdown-menu">
+      <a
+        class="dropdown-item"
+        *ngFor="let tab of moreTabs; let i = index"
+        (click)="selectTab(i + visibleTabs.length)"
+        >{{ tab }}</a
+      >
+    </div>
+  </li>
+</ul>
+<ng-container *ngFor="let content of tabs; let i = index" >
+  <ng-content></ng-content>
+</ng-container>
+</div>
