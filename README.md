@@ -1,4 +1,4 @@
 # dynamic-nested-tabs-responsive
-## Auto hide and show tab on screen change size
+Auto hide and show tab on screen change size
 
-[Edit in StackBlitz next generation editor ⚡️]([https://stackblitz.com/~/github.com/nguyentrunghieutcu/dynamic-nested-tabs](https://stackblitz.com/edit/dynamic-nested-tabs?file=app%2Fapp.component.ts))
+![Screen Shot 2024-08-30 at 9 18 29 AM](https://github.com/user-attachments/assets/77599e99-f51d-4eba-920c-49a850ad9602)
